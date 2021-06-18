@@ -45,3 +45,21 @@ function binarySearch(arr, target) {
 
 // [0,1,2,3,4,5] target = 3
 // [0,1,2] 3 [4,5]
+
+
+function binarySearch1(arr, target) {
+    if (arr.length === 0) return -1;
+
+    const midpoint = Math.floor(arr.length / 2);
+    if (target < arr[midpoint]) {
+        return binarySearch(arr.slice(0, midpoint), target);
+    } else if (arr[midpoint] < target) {
+        const subResult = binarySearch(arr.slice(midpoint + 1), target);
+        return subResult === -1 ? -1 : subResult + midpoint + 1;
+    } else {
+        return midpoint;
+    }
+}
+
+
+console.log(binarySearch1([1, 2], 1))
