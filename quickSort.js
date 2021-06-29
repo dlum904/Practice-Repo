@@ -18,5 +18,21 @@ function quickSort(arr) {
 }
 
 
-console.log(quickSort([4, 2, 1, 3, 5]));
-console.log(quickSort([4, 5]));
+
+
+function quickSort2(arr) {
+
+    if (arr.length < 2) return arr;
+    const pivot = arr[0];
+    let left = arr.slice(1).filter((el) => el < pivot);
+    let right = arr.slice(1).filter((el) => el >= pivot);
+
+    left = quickSort2(left);
+    right = quickSort2(right);
+
+    return left.concat(pivot, right);
+    
+} 
+
+console.log(quickSort2([4, 2, 1, 3, 5]));
+console.log(quickSort2([4, 5]));
