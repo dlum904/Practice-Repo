@@ -17,9 +17,12 @@ function spiralTraverse(array) {
 
 // a[3][2], a[3][1], a[3][0]	BOTTOM - [keep ending Row][decriment until reach starting Col]
 
+
 // a[2][0].a[1][0]	LEFT
 
 // a[1][1], a[1][2]	TOP
+
+
 
 // a[2][2]	RIGHT
 
