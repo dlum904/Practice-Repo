@@ -1,18 +1,13 @@
-const obj = {
-    num: 1
+async function apiCall() {
+    return new Promise(resolve => {
+        setTimeout(() => {resolve('b')}, 50)
+    })
 }
 
-
-// const addToThis = function (a){
-//     return this.num + a;
-// }
-
-function addToThis (a) {
-    // console.log(this)
-    return this.num + a;
+async function logger() {
+    setTimeout( () => console.log('a'), 10)
+    console.log(await apiCall())
+    console.log('c')
 }
 
-const superAddToThis = addToThis.bind(obj);
-
-console.log(superAddToThis(3))
-// console.log(addToThis.call(obj, 3))
+logger();
