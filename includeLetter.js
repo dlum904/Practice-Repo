@@ -16,4 +16,4 @@ function includeLetter(digits, letter) {
     return false;
 }
 
-console.log(includeLetter([2,3], "f"))
+console.log(includeLetter([2, 3], "f"))
