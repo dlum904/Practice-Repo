@@ -142,12 +142,12 @@ bst.insert(39);
 console.log(bst);
 // console.log(bst.min());
 
-console.log(`maximum value is: ${bst.min()}`);
-console.log(`minimum value is: ${bst.max()}`);
+// console.log(`maximum value is: ${bst.min()}`);
+// console.log(`minimum value is: ${bst.max()}`);
 
-console.log(`contains 1?: ${bst.contains(1)}`);
-console.log(`contains 39?: ${bst.contains(39)}`);
+// console.log(`contains 1?: ${bst.contains(1)}`);
+// console.log(`contains 39?: ${bst.contains(39)}`);
 
-console.log(bst.dfsPreOrder());
-console.log(bst.dfsPostOrder());
+// console.log(bst.dfsPreOrder());
+// console.log(bst.dfsPostOrder());
 console.log(bst.bfs());
