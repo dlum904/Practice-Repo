@@ -5,7 +5,7 @@
     // ]
 
 function textEditor(input) {
-    // const command = input[0];
+    const command = input[0];
 
     let currStr = "";
     let currIdx = 0;
