@@ -14,7 +14,6 @@ function longestPeak(array) {
 
 function isPeak(array) {
     if (array.length < 3) return false;
-    // console.log(array)
     let tip = false;
     for (let i = 1; i < array.length; i++) {
         let prevEl = array[i - 1];
