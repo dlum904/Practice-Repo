@@ -3,6 +3,7 @@
     // ["APPEND", ".  How are you doin??"],
     // ["DELETE"]
     // ]
+    //
 
 function textEditor(input) {
     const command = input[0];
