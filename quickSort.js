@@ -18,8 +18,6 @@ function quickSort(arr) {
 }
 
 
-
-
 function quickSort2(arr) {
 
     if (arr.length < 2) return arr;
